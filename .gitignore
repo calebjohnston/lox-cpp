@@ -34,8 +34,5 @@
 # MacOS
 .DS_Store
 
-# VSCode
-.vscode
-
 # CMake
 build
