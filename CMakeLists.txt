@@ -8,9 +8,10 @@ set(CMAKE_TOOLCHAIN_FILE $ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake)
 
 project(loxcc)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS ON)
+set(CMAKE_BUILD_TYPE Debug)
 
 find_package(glm CONFIG REQUIRED)
 
@@ -20,7 +21,7 @@ set( SRCS
 
 add_executable(loxcc ${SRCS})
 
-set_property(TARGET loxcc PROPERTY CXX_STANDARD 20)
+set_property(TARGET loxcc PROPERTY CXX_STANDARD 23)
 
 #--------------------------------------------------------------------------------
 # Associate linker dependencies to target(s).
